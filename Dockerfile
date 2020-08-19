@@ -14,7 +14,7 @@ COPY ./model_data /app/
 # hadolint ignore=DL3013
 RUN pip install --upgrade pip
 RUN pip install -r requirements.txt
-RUN pip install pylint
+RUN pip install pylint==2.4.4
 
 ## Step 4:
 # Expose port 80
